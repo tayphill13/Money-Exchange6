@@ -12,15 +12,17 @@ $(document).ready(function () {
     
     (async () => {
       let moneyExchange= new CurrencyExchange();
-      let apiResponse = await moneyExchange.getCurrencyConversion();
-      makeConversion(apiResponse, countryConvertTo);
+      let response = await moneyExchange.getCurrencyConversion();
+      makeConversion(response, countryConvertTo);
     })();
 
-    function makeConversion(apiResponse, countryConvertTo)  {  // apiResponse is the conversion rate from API call and countryConvert is the selected country for conversion
-      if (!apiResponse && countryConvertTo === null)  {
+    function makeConversion(response, countryConvertTo)  {  // apiResponse is the conversion rate from API call and countryConvert is the selected country for conversion
+      if (!response && countryConvertTo === null)  {
         $("#result").text("There was an error, it's possible that country is not supported by this application");
-      } else if (apiResponse && countryConvertTo === "swiss")  {
-        $("#result").text(`${apiResponse.conversion_rates.CHF}` * exchangeAmount);
+      } else if (response && countryConvertTo === "swiss")  {
+        $("#result").text(`${response.conversion_rates.CHF}`*exchangeAmount);
+      } else if (response && countryConvertTo === "mexican")  {
+        $("#result").text(`${response.conversion_rates.MXN}`*exchangeAmount);
       }
     }
   });
