@@ -5,6 +5,8 @@ import './styles.css';
 import {CurrencyService} from './exchange-service.js';
 
 $(document).ready(function () {
+  
+
   // $('#submit-button').submit(function (event) {
   //     event.preventDefault();
 

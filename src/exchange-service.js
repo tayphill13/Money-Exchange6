@@ -1,3 +1,5 @@
+import './main.js';
+
 export class CurrencyService {
   async getCurrencyConversion() {
     try {
@@ -10,7 +12,7 @@ export class CurrencyService {
       }
       return jsonResponse;
     } catch (error) {
-      return false;
+      alert("The API call failed.");
     }
   }
 }

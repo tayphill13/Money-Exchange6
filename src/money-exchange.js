@@ -1,2 +1,1 @@
-// project business logic goes here
-// exports!
+import {CurrencyService} from '../src/exchange-service.js';
