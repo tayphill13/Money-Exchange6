@@ -11,9 +11,10 @@ _This is a currency exhange application that will allow the user to enter an amo
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| User will be able to enter an amount in U.S. Dollars to be converted  |     |       |
-| User will select the desired currency to convert to and will see that displayed  |  $10 U.S. -> Swiss Francs | 9.46 Swiss Francs  |
-| If User selects a currency that is not supported then an error will be thrown   | Rupees  |  Sorry Rupees are not supported by this converter   |
+| User will be able to enter an amount in U.S. Dollars to be converted  |   10  |       |
+| User will select the desired currency to convert to  |  Swiss Francs |   |
+| Amount user enters will be multiplied by the received converstion rate  |  10 |  9.46 Swiss Francs   |
+| If User selects a currency that is not supported then an error will be thrown   | Rupees  |  Sorry that currency is not supported by this converter  |
 
 ## Setup/Installation Requirements
 
