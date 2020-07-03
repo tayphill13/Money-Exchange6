@@ -24,14 +24,14 @@ $(document).ready(function () {
       } else if (response && countryConvertTo === "mexican")  {
         $("#result").text(`${response.conversion_rates.MXN}`*exchangeAmount + ' Mexican Pesos');
       } else if (response && countryConvertTo === "canadian") {
-        $("#result").text(`${response.conversion_rates.CAD}`*exchangeAmount + ' Canadian Dollar');
+        $("#result").text(`${response.conversion_rates.CAD}`*exchangeAmount + ' Canadian Dollars');
       } else if (response && countryConvertTo === "peruvian") {
         $("#result").text(`${response.conversion_rates.PEN}`*exchangeAmount + ' Peruvian Sol');
       } else if (response && countryConvertTo === "taiwanese")  {
-        $("#result").text(`${response.conversion_rates.TWD}`*exchangeAmount + ' New Taiwan Dollar');
+        $("#result").text(`${response.conversion_rates.TWD}`*exchangeAmount + ' New Taiwan Dollars');
       } else if (response && countryConvertTo === "uk") {
         $("#result").text(`${response.conversion_rates.GBP}` * exchangeAmount + ' Pounds Stirling'); 
-      } else if (response && countryConvertTo === "euro") {
+      } else if (response && countryConvertTo === "euros") {
         $("#result").text(`${response.conversion_rates.EUR}` * exchangeAmount + ' Euros');
       } else if (response && countryConvertTo === "turkish")  {
         $("#result").text(`${response.conversion_rates.TRY}` * exchangeAmount + ' Turkish Lira');

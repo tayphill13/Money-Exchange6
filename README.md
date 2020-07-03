@@ -14,24 +14,27 @@ _This is a currency exhange application that will allow the user to enter an amo
 | User will be able to enter an amount in U.S. Dollars to be converted  |   10  |       |
 | User will select the desired currency to convert to  |  Swiss Francs |   |
 | Amount user enters will be multiplied by the received converstion rate  |  10 |  9.46 Swiss Francs   |
-| If User selects a currency that is not supported then an error will be thrown   | Rupees  |  Sorry that currency is not supported by this converter  |
+| If User selects a currency that is not supported then an error will be thrown   | Rupees  |  There was an error, it's possible that country is not supported by this application  |
 
 ## Setup/Installation Requirements
 
 * _Install Git Bash_
 * _Using a Terminal on desktop, user will need to type git init_
-* _go to this repository and clone then Open in Desktop_
-* _Will likely need Git for Desktop which can be found here: https://help.github.com/en/desktop/getting-started-with-github-desktop/installing-github-desktop_
 * _Clone file to desktop from repo on github_
+* _Navigate to project folder using command line type: [cd Desktop] followed by [cd Money-Echange6]_
+* _In Command Line, type, npm install -> followed by npm run build_
+
+User will need to acquire an API key and protect with .env file:
+* _Go to <https://www.exchangerate-api.com/> and enter email address, push Get Free Key_
+* _In the main project folder, user will need to make sure to have .gitignore file containing .env_
+* _In the .env file, user will need to put "API_KEY = Put your acquired API key here"_
+* _**DO NOT SHARE YOUR API KEY**_
 * _run index.html with web browser_
-* _Other option is to go to Repository on git hub and download zip_
-* _Retrieve zip file in downloads on computer and double click to unpack_
-* _Find the project folder on desktop or downloads folder_
-* _Run index.html with web browser
 
 ## Known Bugs
 
-_ _
+_Currently no known bugs, please report them to Taylor_
+
 ## Support and contact details
 
 _Contact me at <taylorphillips133@gmail.com>_
