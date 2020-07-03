@@ -7,10 +7,18 @@
   <body>
     <div class="container">
       <h1>Exchange Currency</h1>
-      <div id="exchange-form">
+      <div id="formOne">
         <p>Convert</p>
-        <input id="money-amount" type="text" placeholder="U.S. Dollars">
-        <p>to</p><input id="country" type="text" placeholder="Other Currency">
+        <input id="money-amount" type="number" placeholder="U.S. Dollars" required>
+        <p>to</p>
+        <select required>
+          <option disabled selected value> -- Currency to exchange to -- </option>
+          <option id="cad" value="canadian">CAD - Canadian Dollar</option>
+          <option id="mxn" value="mexican">MXN - Mexican Peso</option>
+          <option id="pen" value="peruvian">PEN - Peruvian Sol</option>
+          <option id="twd" value="taiwanese">TWD - New Taiwan Dollar</option>
+          <option id="CHF" value="swiss">CHF - Swiss Franc</option>
+        </select>
         <br><br>
         <button id="submit">Convert</button>
         <hr>

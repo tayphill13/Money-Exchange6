@@ -1,7 +1,7 @@
 export class CurrencyService {
   async getCurrencyConversion() {
     try {
-      let response = await fetch("https://v6.exchangerate-api.com/v6/API_KEY/pair/USD/OTHERCURRENCY/AMOUNT");
+      let response = await fetch("https://v6.exchangerate-api.com/v6/API_KEY/latest/USD/");
       let jsonResponse;
       if (response.ok && response.status == 200) {
         jsonResponse = await response.json();
