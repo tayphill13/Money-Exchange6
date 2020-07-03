@@ -33,6 +33,10 @@ $(document).ready(function () {
         $("#result").text(`${response.conversion_rates.GBP}` * exchangeAmount + ' Pounds Stirling'); 
       } else if (response && countryConvertTo === "euro") {
         $("#result").text(`${response.conversion_rates.EUR}` * exchangeAmount + ' Euros');
+      } else if (response && countryConvertTo === "turkish")  {
+        $("#result").text(`${response.conversion_rates.TRY}` * exchangeAmount + ' Turkish Lira');
+      } else if (response && countryConvertTo === "japanese") {
+        $("#result").text(`${response.conversion_rates.JPY}` * exchangeAmount + ' Japanese Yen');
       }
     }
   });
