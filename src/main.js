@@ -16,8 +16,10 @@ $(document).ready(function () {
       makeConversion(apiResponse, countryConvertTo);
     })();
 
-    function makeConversion(apiResponse, countryConvertTo)  {
-
+    function makeConversion(apiResponse, countryConvertTo)  {  // apiResponse is the conversion rate from API call and countryConvert is the selected country for conversion
+      if (!apiResponse && countryConvertTo === null)  {
+        $("#result").text("There was an error, it's possible that country is not supported by this application");
+      }
     }
   });
 
