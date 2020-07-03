@@ -13,11 +13,13 @@ $(document).ready(function () {
     (async () => {
       let moneyExchange= new CurrencyExchange();
       let apiResponse = await moneyExchange.getCurrencyConversion();
-    });
+      makeConversion(apiResponse, countryConvertTo);
+    })();
+
+    function makeConversion(apiResponse, countryConvertTo)  {
+
+    }
   });
 
-  // $('#submit-button').submit(function (event) {
-  //     event.preventDefault();
 
-  // });
 });
