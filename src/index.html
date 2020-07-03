@@ -11,7 +11,7 @@
         <p>Convert</p>
         <input id="money-amount" type="number" placeholder="U.S. Dollars" required>
         <p>to</p>
-        <select required>
+        <select id="conversion-select" required>
           <option disabled selected value> -- Currency to exchange to -- </option>
           <option id="cad" value="canadian">CAD - Canadian Dollar</option>
           <option id="mxn" value="mexican">MXN - Mexican Peso</option>
@@ -21,7 +21,7 @@
         </select>
       </form>
       <br><br>
-      <button id="submit">Convert</button>
+      <button type="submit">Convert</button>
       <hr>
       <span id="result"></span>
     </div>
