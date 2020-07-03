@@ -12,7 +12,7 @@ $(document).ready(function () {
     
     (async () => {
       let moneyExchange = new CurrencyExchange();
-      let response = await moneyExchange.getCurrencyConversion();
+      let response = await moneyExchange.getConversionRate();
       makeConversion(response, countryConvertTo);
     })();
 
