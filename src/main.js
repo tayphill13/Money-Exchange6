@@ -20,11 +20,11 @@ $(document).ready(function () {
       if (!response && countryConvertTo === null)  {
         $("#result").text("There was an error, it's possible that country is not supported by this application");
       } else if (response && countryConvertTo === "swiss")  {
-        $("#result").text(`${response.conversion_rates.CHF}`*exchangeAmount + ' Swiss Dollars'); // Should be the (conversion rate from API) X (money amount entered by user)
+        $("#result").text(`${response.conversion_rates.CHF}`*exchangeAmount + ' Swiss Francs'); // Should be the (conversion rate from API) X (money amount entered by user)
       } else if (response && countryConvertTo === "mexican")  {
-        $("#result").text(`${response.conversion_rates.MXN}`*exchangeAmount);
+        $("#result").text(`${response.conversion_rates.MXN}`*exchangeAmount + ' Mexican Pesos');
       } else if (response && countryConvertTo === "canadian") {
-        $("#result").text(`${response.conversion_rates.CAD}`*exchangeAmount);
+        $("#result").text(`${response.conversion_rates.CAD}`*exchangeAmount+ ' Canadian Dollar');
       } else if (response && countryConvertTo === "peruvian") {
         $("#result").text(`${response.conversion_rates.PEN}`*exchangeAmount);
       } else if (response && countryConvertTo === "taiwanese")  {
