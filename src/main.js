@@ -26,9 +26,9 @@ $(document).ready(function () {
       } else if (response && countryConvertTo === "canadian") {
         $("#result").text(`${response.conversion_rates.CAD}`*exchangeAmount);
       } else if (response && countryConvertTo === "peruvian") {
-      //   $("#result").text(`${response.conversion_rates.PEN}`*exchangeAmount);
-      // } else if (response && countryConvertTo === "taiwanese")  {
-
+        $("#result").text(`${response.conversion_rates.PEN}`*exchangeAmount);
+      } else if (response && countryConvertTo === "taiwanese")  {
+        $("#result").text(`${response.conversion_rates.TWD}`*exchangeAmount);
       }
     }
   });
