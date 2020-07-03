@@ -24,11 +24,11 @@ $(document).ready(function () {
       } else if (response && countryConvertTo === "mexican")  {
         $("#result").text(`${response.conversion_rates.MXN}`*exchangeAmount + ' Mexican Pesos');
       } else if (response && countryConvertTo === "canadian") {
-        $("#result").text(`${response.conversion_rates.CAD}`*exchangeAmount+ ' Canadian Dollar');
+        $("#result").text(`${response.conversion_rates.CAD}`*exchangeAmount + ' Canadian Dollar');
       } else if (response && countryConvertTo === "peruvian") {
-        $("#result").text(`${response.conversion_rates.PEN}`*exchangeAmount);
+        $("#result").text(`${response.conversion_rates.PEN}`*exchangeAmount + ' Peruvian Sol');
       } else if (response && countryConvertTo === "taiwanese")  {
-        $("#result").text(`${response.conversion_rates.TWD}`*exchangeAmount);
+        $("#result").text(`${response.conversion_rates.TWD}`*exchangeAmount + ' New Taiwan Dollar');
       }
     }
   });
