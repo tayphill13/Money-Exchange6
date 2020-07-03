@@ -1,12 +1,12 @@
-# _PROJECT NAME_
+# _Money-Exchange6_
 
-#### _SHORT DESCR_
+#### _This is a currency exchange API for the week 6 project at Epicodus, 7.3.2020_
 
-#### By _**YOUR NAME HERE**_
+#### By _**Taylor Phillips**_
 
 ## Description
 
-_Long deiscription._
+_This is a currency exhange application that will allow the user to enter an amount in US dollars that will be converted to another selected currency._
 
 ### Specs
 | Spec | Input | Output |
@@ -31,7 +31,7 @@ _Long deiscription._
 _ _
 ## Support and contact details
 
-_Contact me at...._
+_Contact me at <taylorphillips133@gmail.com>_
 
 ## Technologies Used
 
@@ -41,9 +41,11 @@ _Bootstrap_
 _JavaScript_
 _JQuery_
 _VSCode_
+_Webpack_
+_ExchangeRate-API  found at <https://www.exchangerate-api.com/>_
 
 ### License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Copyright (c) 2020 **_Your name(s)_**
+Copyright (c) 2020 **_Taylor Phillips_**
