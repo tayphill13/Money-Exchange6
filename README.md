@@ -6,7 +6,7 @@
 
 ## Description
 
-_This is a currency exhange application that will allow the user to enter an amount in US dollars that will be converted to another selected currency._
+_This is a currency exhange application that will allow the user to enter an amount in US dollars and a country to convert to.  When user submits, their requested amount will be converted to selected country currency using the latest conversion rate gathered by an API call._
 
 ### Specs
 | Spec | Input | Output |
