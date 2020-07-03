@@ -7,8 +7,8 @@ import {CurrencyExchange} from './exchange-service.js';
 $(document).ready(function () {
   $("#currency-exchange").submit(function(event)  {
     event.preventDefault();
-    let exchangeAmount = parseInt($("money-amount").val());  // Use in the makeConversion function to multiply by the conversion rate
-    let countryConvertTo = $("conversion-select").val();
+    let exchangeAmount = parseInt($("#money-amount").val());  // Use in the makeConversion function to multiply by the conversion rate
+    let countryConvertTo = $("#conversion-select").val();
     
     (async () => {
       let moneyExchange= new CurrencyExchange();
