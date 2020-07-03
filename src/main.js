@@ -19,6 +19,8 @@ $(document).ready(function () {
     function makeConversion(apiResponse, countryConvertTo)  {  // apiResponse is the conversion rate from API call and countryConvert is the selected country for conversion
       if (!apiResponse && countryConvertTo === null)  {
         $("#result").text("There was an error, it's possible that country is not supported by this application");
+      } else if (apiResponse && countryConvertTo === "swiss")  {
+        $("#result").text(`${apiResponse.conversion_rates.CHF}` * exchangeAmount);
       }
     }
   });
