@@ -29,6 +29,10 @@ $(document).ready(function () {
         $("#result").text(`${response.conversion_rates.PEN}`*exchangeAmount + ' Peruvian Sol');
       } else if (response && countryConvertTo === "taiwanese")  {
         $("#result").text(`${response.conversion_rates.TWD}`*exchangeAmount + ' New Taiwan Dollar');
+      } else if (response && countryConvertTo === "uk") {
+        $("#result").text(`${response.conversion_rates.GBP}` * exchangeAmount + ' Pounds Stirling'); 
+      } else if (response && countryConvertTo === "euro") {
+        $("#result").text(`${response.conversion_rates.EUR}` * exchangeAmount + ' Euros');
       }
     }
   });
