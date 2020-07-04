@@ -9,7 +9,6 @@ export class CurrencyExchange {
         jsonResponse = await response.json();
       } else {
         jsonResponse = false;
-        alert("API not ok");
       }
       return jsonResponse;
     } catch (error) {
