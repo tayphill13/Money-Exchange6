@@ -8,34 +8,34 @@ $(document).ready(function () {
   $("#currency-exchange").submit(function(event)  {
     event.preventDefault();
     let exchangeAmount = parseInt($("#money-amount").val());
-    let countryConvertTo = $("#conversion-select").val();
+    let countryToConvertTo = $("#conversion-select").val();
     
     (async () => {
       let moneyExchange = new CurrencyExchange();
       let response = await moneyExchange.getConversionRate();
-      makeConversion(response, countryConvertTo);
+      makeConversion(response, countryToConvertTo);
     })();
 
-    function makeConversion(response, countryConvertTo)  { 
-      if (!response && countryConvertTo === null)  {
+    function makeConversion(response, countryToConvertTo)  { 
+      if (!response && countryToConvertTo === null)  {
         $("#result").text("There was an error, it's possible that country is not supported by this application");
-      } else if (response && countryConvertTo === "swiss")  {
+      } else if (response && countryToConvertTo === "swiss")  {
         $("#result").text(`${response.conversion_rates.CHF}`* exchangeAmount + ' Swiss Francs');
-      } else if (response && countryConvertTo === "mexican")  {
+      } else if (response && countryToConvertTo === "mexican")  {
         $("#result").text(`${response.conversion_rates.MXN}`* exchangeAmount + ' Mexican Pesos');
-      } else if (response && countryConvertTo === "canadian") {
+      } else if (response && countryToConvertTo === "canadian") {
         $("#result").text(`${response.conversion_rates.CAD}`* exchangeAmount + ' Canadian Dollars');
-      } else if (response && countryConvertTo === "peruvian") {
+      } else if (response && countryToConvertTo === "peruvian") {
         $("#result").text(`${response.conversion_rates.PEN}`* exchangeAmount + ' Peruvian Sol');
-      } else if (response && countryConvertTo === "taiwanese")  {
+      } else if (response && countryToConvertTo === "taiwanese")  {
         $("#result").text(`${response.conversion_rates.TWD}`* exchangeAmount + ' New Taiwan Dollars');
-      } else if (response && countryConvertTo === "uk") {
+      } else if (response && countryToConvertTo === "uk") {
         $("#result").text(`${response.conversion_rates.GBP}` * exchangeAmount + ' Pounds Stirling'); 
-      } else if (response && countryConvertTo === "euros") {
+      } else if (response && countryToConvertTo === "euros") {
         $("#result").text(`${response.conversion_rates.EUR}` * exchangeAmount + ' Euros');
-      } else if (response && countryConvertTo === "turkish")  {
+      } else if (response && countryToConvertTo === "turkish")  {
         $("#result").text(`${response.conversion_rates.TRY}` * exchangeAmount + ' Turkish Lira');
-      } else if (response && countryConvertTo === "japanese") {
+      } else if (response && countryToConvertTo === "japanese") {
         $("#result").text(`${response.conversion_rates.JPY}` * exchangeAmount + ' Japanese Yen');
       }
     }
