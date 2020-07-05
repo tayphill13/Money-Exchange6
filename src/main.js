@@ -41,9 +41,11 @@ $(document).ready(function () {
         $("#result").text(`${response.conversion_rates.DKK}`* exchangeAmount + ' Danish Krones');
       } else if (response && countryToConvertTo === "egyptian") {
         $("#result").text(`${response.conversion_rates.EGP}`* exchangeAmount + ' Egyptian Pounds');
+      } else if (response && countryToConvertTo === "bahamian") {
+        $("#result").text(`${response.conversion_rates.BSD}` * exchangeAmount + ' Bahamian Dollars');
+      } else if (response && countryToConvertTo === "polish") {
+        $("#result").text(`${response.conversion_rates.PLN}` * exchangeAmount + ' Polish Zlotys');
       }
     }
   });
-
-
 });
