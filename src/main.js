@@ -37,6 +37,10 @@ $(document).ready(function () {
         $("#result").text(`${response.conversion_rates.TRY}` * exchangeAmount + ' Turkish Lira');
       } else if (response && countryToConvertTo === "japanese") {
         $("#result").text(`${response.conversion_rates.JPY}` * exchangeAmount + ' Japanese Yen');
+      } else if (response && countryToConvertTo === "danish") {
+        $("#result").text(`${response.conversion_rates.DKK}`* exchangeAmount + ' Danish Krones');
+      } else if (response && countryToConvertTo === "egyptian") {
+        $("#result").text(`${response.conversion_rates.EGP}`* exchangeAmount + ' Egyptian Pounds');
       }
     }
   });
