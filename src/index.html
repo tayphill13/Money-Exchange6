@@ -5,31 +5,36 @@
   </head>
   <body>
     <div class="container">
-      <h1>Exchange Currency 💸</h1>
-      <form id="currency-exchange">
-        <p>Convert</p>
-        <input id="money-amount" type="number" required> U.S. Dollars</input>
-        <p>to</p>
-        <select id="conversion-select" required>
-          <option disabled selected value> -- Currency to exchange to -- </option>
-          <option value="canadian">CAD - Canadian Dollar</option>
-          <option value="mexican">MXN - Mexican Peso</option>
-          <option value="peruvian">PEN - Peruvian Sol</option>
-          <option value="taiwanese">TWD - New Taiwan Dollar</option>
-          <option value="swiss">CHF - Swiss Franc</option>
-          <option value="euros">EUR - Euros</option>
-          <option value="uk">GBP - UK Pound Stirling</option>
-          <option value="turkish">TRY - Turkish Lira</option>
-          <option value="japanese">JPY - Japanese Yen</option>
-          <option value="danish">DKK - Danish Krone</option>
-          <option value="egyptian">EGP - Egyptian Pound</option>
-          <option value="bahamian">BSD - Bahamian Dollars</option>
-          <option value="polish">PLN - Polish Zloty</option>
-        </select><br><br>
-        <button type="submit">Convert</button>
-      </form>
-      <hr>
-      <span id="result"></span>
+      <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8">
+        <h1>Exchange Currency 💸</h1>
+        <form id="currency-exchange">
+          <p>Convert</p>
+          <input id="money-amount" type="number" required> U.S. Dollars</input>
+          <p>to</p>
+          <select id="conversion-select" required>
+            <option disabled selected value> -- Currency to exchange to -- </option>
+            <option value="canadian">CAD - Canadian Dollar</option>
+            <option value="mexican">MXN - Mexican Peso</option>
+            <option value="peruvian">PEN - Peruvian Sol</option>
+            <option value="taiwanese">TWD - New Taiwan Dollar</option>
+            <option value="swiss">CHF - Swiss Franc</option>
+            <option value="euros">EUR - Euros</option>
+            <option value="uk">GBP - UK Pound Stirling</option>
+            <option value="turkish">TRY - Turkish Lira</option>
+            <option value="japanese">JPY - Japanese Yen</option>
+            <option value="danish">DKK - Danish Krone</option>
+            <option value="egyptian">EGP - Egyptian Pound</option>
+            <option value="bahamian">BSD - Bahamian Dollars</option>
+            <option value="polish">PLN - Polish Zloty</option>
+          </select><br><br>
+          <button type="submit">Convert</button>
+        </form>
+        <span id="result"></span>
+        </div>
+      </div>
     </div>
   </body>
 

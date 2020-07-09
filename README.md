@@ -30,7 +30,7 @@ User will need to acquire an API key and protect with .env file:
 * _In the root folder, user will need to create a .env file_
 * _In the .env file, user will need to put _API_KEY = acquired API key_ --> ( i.e. API_KEY=sdfo8e4IUDFE9y4 )_
 * _**DO NOT SHARE YOUR API KEY**_
-* _Within a command line terminal, user must type npm start to initiate the webpage_
+* _Within a command line terminal, user must type npm start to initiate the localhost webpage_
 
 ## Known Bugs
 
